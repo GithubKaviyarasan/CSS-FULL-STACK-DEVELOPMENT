@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Background Properties</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 20px;
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .box{
+            width: 500px;
+            height: 250px;
+            border: 3px solid black;
+            margin: 30px auto;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            line-height: 250px;
+        }
+
+        /* 1. BACKGROUND COLOR */
+
+        .box1{
+            background-color: crimson;
+        }
+
+        /* 2. BACKGROUND IMAGE */
+
+        .box2{
+            background-image: url('./Assets/v1030-069.jpg');
+        }
+
+        /*3. BACKGROUND REPEAT */
+
+        .box3{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-repeat: repeat;
+        }
+
+        /*
+           4. BACKGROUND NO REPEAT*/
+
+        .box4{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-repeat: no-repeat;
+        }
+
+        /* 
+           5. BACKGROUND SIZE COVER */
+
+        .box5{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-size: cover;
+        }
+
+        /*6. BACKGROUND SIZE CONTAIN */
+
+        .box6{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    /* 7. BACKGROUND POSITION */ 
+
+        .box7{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+      
+           /* 8. BACKGROUND ATTACHMENT */
+    
+        .box8{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+      
+           /* 9. RGBA TRANSPARENT */
+        .box9{
+            background-color: rgba(0,0,0,0.5);
+        }
+
+      
+           /* 10. LINEAR GRADIENT */
+
+        .box10{
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            
+        }
+      
+           /* 11. RADIAL GRADIENT */
+
+        .box11{
+           background: #020024;
+           background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+        }
+
+      
+           /* 12. BACKGROUND BLEND MODE */
+        .box12{
+            background-image: url('./Assets/v1030-069.jpg');
+            background-color: rgba(0,0,0,0.5);
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+
+       
+           /* 13. SHORTCUT BACKGROUND */
+        .box13{
+            background: black url('./Assets/v1030-069.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Background Properties</h1>
+
+    <div class="box box1">
+        background-color
+    </div>
+
+    <div class="box box2">
+        background-image
+    </div>
+
+    <div class="box box3">
+        background-repeat
+    </div>
+
+    <div class="box box4">
+        no-repeat
+    </div>
+
+    <div class="box box5">
+        background-size: cover
+    </div>
+
+    <div class="box box6">
+        background-size: contain
+    </div>
+
+    <div class="box box7">
+        background-position
+    </div>
+
+    <div class="box box8">
+        background-attachment
+    </div>
+
+    <div class="box box9">
+        rgba transparent
+    </div>
+
+    <div class="box box10">
+        linear-gradient
+    </div>
+
+    <div class="box box11">
+        radial-gradient
+    </div>
+
+    <div class="box box12">
+        background-blend-mode
+    </div>
+
+    <div class="box box13">
+        shortcut background
+    </div>
+
+</body>
+
+</html>
